@@ -3,12 +3,12 @@ Starting audit...
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:12:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:15:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:15:29: Parameter args should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:20:11: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:30:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:34:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:36: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:41:8: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:43:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:21:11: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:31:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:35:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:37: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:42:8: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:44:12: 'for' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 10 errors.
 Starting audit...

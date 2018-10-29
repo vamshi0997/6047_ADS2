@@ -17,6 +17,7 @@ public final class Solution {
         String type = scan.nextLine();
         int vertex = Integer.parseInt(scan.nextLine());
         int edge = Integer.parseInt(scan.nextLine());
+        System.out.println(vertex + " vertices, " + edge + " edges ");
         if(vertex == 0 || edge == 0) {
             System.out.println("No edges");
             return;
@@ -37,7 +38,7 @@ public final class Solution {
         }
 
     StringBuilder s = new StringBuilder();
-    s.append(vertex + " vertices, " + edge + " edges " + "\n");
+    //s.append(vertex + " vertices, " + edge + " edges " + "\n");
     for(int i = 0; i < vertex; i++) {
         s.append(map.get(i) + ": ");
         for(int j : g.adj(i)) {
