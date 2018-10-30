@@ -1,88 +1,111 @@
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-public class Graph {
-    private static final String NEWLINE = System.getProperty("line.separator");
+/**
+ * Class for graph.
+ */
+class Graph {
+    /**
+     * integer variable vertices.
+     */
+    private int vertices;
+    /**
+     * integer variable edges.
+     */
+    private int edges;
+    /**
+     * array of bag type.
+     */
+    private Bag<Integer>[] adj;
+    /**
+     * Constructs the object.
+     */
+    Graph() {
 
-    private final int V;
-    private int E;
-    private boolean[][] adj;
-
-    // empty graph with V vertices
-    public Graph(int V) {
-        if (V < 0) throw new IllegalArgumentException("Too few vertices");
-        this.V = V;
-        this.E = 0;
-        this.adj = new boolean[V][V];
     }
-
-    // number of vertices and edges
-    public int V() { return V; }
-    public int E() { return E; }
-
-
-    // add undirected edge v-w
-    public void addEdge(int v, int w) {
-        if (!adj[v][w]) E++;
-        adj[v][w] = true;
-        adj[w][v] = true;
-    }
-
-    // does the graph contain the edge v-w?
-    public boolean contains(int v, int w) {
-        return adj[v][w];
-    }
-
-    // return list of neighbors of v
-    public Iterable<Integer> adj(int v) {
-        return new AdjIterator(v);
-    }
-
-    // support iteration over graph vertices
-    private class AdjIterator implements Iterator<Integer>, Iterable<Integer> {
-        private int v;
-        private int w = 0;
-
-        AdjIterator(int v) {
-            this.v = v;
+    /**
+     * Constructs the object.
+     * Time complexity is O(n).
+     * @param      vertex     integer variable.
+     */
+    Graph(final int vertex) {
+        vertices = vertex;
+        edges = 0;
+        adj = (Bag<Integer>[]) new Bag[vertex];
+        for (int i = 0; i < vertex; i++) {
+            adj[i] = new Bag<Integer>();
         }
-
-        public Iterator<Integer> iterator() {
-            return this;
+    }
+    /**
+     * returns vertices.
+     * Time complexity is O(1).
+     * @return  vertices.
+     */
+    public int ve() {
+        return vertices;
+    }
+    /**
+     * returns edges.
+     * Time complexity is O(1).
+     * @return edges.
+     */
+    public int e() {
+        return edges;
+    }
+    /**
+     * Adds an edge.
+     * Time complexity is O(1)
+     * @param      v     integer variable.
+     * @param      w     integer variable.
+     */
+    public void addEdge(final int v, final int w) {
+        if (!hasEdge(v, w)) {
+            edges++;
+            adj[v].add(w);
+            adj[w].add(v);
         }
-
-        public boolean hasNext() {
-            while (w < V) {
-                if (adj[v][w]) return true;
-                w++;
+        if (v == w) {
+            return;
+        }
+    }
+    /**
+     * Determines if it has edge.
+     * @param      v     integer variable.
+     * @param      w     integer variable.
+     * Time complexity is O(v)
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(final int v, final int w) {
+        if (adj[v] == null) {
+            return true;
+        }
+        for (int i : adj[v]) {
+            if (i == w) {
+                return true;
             }
-            return false;
         }
-
-        public Integer next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
-            return w++;
-        }
-
-        public void remove()  {
-            throw new UnsupportedOperationException();
-        }
+        return false;
     }
-
-
-    // string representation of Graph - takes quadratic time
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(V + " " + E + NEWLINE);
-        for (int v = 0; v < V; v++) {
-            s.append(v + ": ");
-            for (int w : adj(v)) {
-                s.append(w + " ");
-            }
-            s.append(NEWLINE);
-        }
-        return s.toString();
+    /**
+     * iterable function.
+     * @param      v integer variable.
+     * Time complexity is O(v)
+     * @return   array.
+     */
+    public Iterable<Integer> adj(final int v) {
+        return adj[v];
     }
-
+    /**
+     * matrix method.
+     * Time complexity is O(1)
+     * @return   array.
+     */
+    public Bag[] matrix() {
+        return adj;
+    }
+    /**
+     * list method.
+     * Time complexity is O(1)
+     * @return  array.
+     */
+    public Bag[] list() {
+        return adj;
+    }
 }
