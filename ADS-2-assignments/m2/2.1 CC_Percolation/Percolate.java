@@ -9,7 +9,7 @@ class Percolate {
     /**
      * to take 2 dimentional array.
      */
-    private int[][] matrix;
+    private int[][] grid;
     /**
      * to keep size.
      */
@@ -21,52 +21,52 @@ class Percolate {
     /**
      * cc of type CC.
      */
-    private CC c;
+    private CC connect;
     /**
      * Constructs the object.
-     * @param      vertex  The size
+     * @param      n  The size
      */
-    Percolate(final int vertex) {
-        matrix = new int[vertex][vertex];
+    Percolate(final int n) {
+        grid = new int[n][n];
         count = 0;
-        g = new Graph((vertex * vertex) + 2);
-        c = new CC(g);
-        this.size = vertex;
+        g = new Graph((n * n) + 2);
+        connect = new CC(g);
+        this.size = n;
     }
     /**
      * function to check whether the element has to be connected or not.
-     * @param      rows   The value of rows
-     * @param      columns   The value of column
+     * @param      row   The value of row
+     * @param      col   The value of column
      * Time complexity for this method is O(1).
      */
-    void open(final int rows, final int columns) {
-        matrix[rows][columns] = 1;
+    void open(final int row, final int col) {
+        grid[row][col] = 1;
         count++;
-        if (rows == 0) {
-            g.addEdge(0, component(rows, columns));
+        if (row == 0) {
+            g.addEdge(0, component(row, col));
         }
-        if (rows == size - 1) {
-            g.addEdge((size * size) + 1, component(rows, columns));
+        if (row == size - 1) {
+            g.addEdge((size * size) + 1, component(row, col));
         }
-        if (rows + 1 < size && matrix[rows][columns] == 1) {
+        if (row + 1 < size && grid[row][col] == 1) {
             g.addEdge(
-                component(rows + 1, columns), component(rows, columns));
+                component(row + 1, col), component(row, col));
         }
-        if (rows - 1 >= 0 && matrix[rows - 1][columns] == 1) {
+        if (row - 1 >= 0 && grid[row - 1][col] == 1) {
             g.addEdge(
-                component(rows - 1, columns), component(rows, columns));
+                component(row - 1, col), component(row, col));
         }
-        if (columns - 1 >= 0 && matrix[rows][columns - 1] == 1) {
-            g.addEdge(component(rows, columns - 1), component(rows, columns));
+        if (col - 1 >= 0 && grid[row][col - 1] == 1) {
+            g.addEdge(component(row, col - 1), component(row, col));
         }
-        if (columns + 1 < size && matrix[rows][columns + 1] == 1) {
+        if (col + 1 < size && grid[row][col + 1] == 1) {
             g.addEdge(
-                component(rows, columns + 1), component(rows, columns));
+                component(row, col + 1), component(row, col));
         }
     }
     /**
-     * to get the component at the particular rows and column.
-     * @param      i     rows index is given.
+     * to get the component at the particular row and column.
+     * @param      i     row index is given.
      * @param      j     column index is given
      * @return     return type is int
      * Time complexity for this method is O(1).
@@ -76,23 +76,23 @@ class Percolate {
     }
     /**
      * Determines if open.
-     * @param      rows   The rows
-     * @param      columns   The columns
+     * @param      row   The row
+     * @param      col   The col
      * @return     True if open, False otherwise.
      * Time complexity for this method is O(1).
      */
-    boolean isOpen(final int rows, final int columns) {
-        return matrix[rows][columns] == 1;
+    boolean isOpen(final int row, final int col) {
+        return grid[row][col] == 1;
     }
     /**
      * Determines if full.
-     * @param      rows   The rows
-     * @param      columns   The columns
+     * @param      row   The row
+     * @param      col   The col
      * @return     True if full, False otherwise.
      * Time complexity for this method is O(1).
      */
-    boolean isFull(final int rows, final int columns) {
-        return matrix[rows][columns] == 0;
+    boolean isFull(final int row, final int col) {
+        return grid[row][col] == 0;
     }
     /**
      * to get the number of open sites.
@@ -103,12 +103,12 @@ class Percolate {
         return count;
     }
     /**
-     * function to check if the matrix percolates or not.
+     * function to check if the grid percolates or not.
      * @return     True if percolates, False otherwise.
      * Time complexity for this method is O(1).
      */
     boolean percolates() {
-        c = new CC(g);
-        return c.connected(0, (size * size) + 1);
+        connect = new CC(g);
+        return connect.connected(0, (size * size) + 1);
     }
 }

@@ -24,10 +24,10 @@ public class CC {
      * @param g the undirected graph
      */
     public CC(final Graph g) {
-        marked = new boolean[g.V()];
-        id = new int[g.V()];
-        size = new int[g.V()];
-        for (int v = 0; v < g.V(); v++) {
+        marked = new boolean[g.vertexs()];
+        id = new int[g.vertexs()];
+        size = new int[g.vertexs()];
+        for (int v = 0; v < g.vertexs(); v++) {
             if (!marked[v]) {
                 dfs(g, v);
                 count++;
