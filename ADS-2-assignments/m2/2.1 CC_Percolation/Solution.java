@@ -7,12 +7,11 @@ public final class Solution {
 	 * Constructs the object.
 	 */
     private Solution() {
-
     }
     /**
      * main method is used to handle the inputs.
      *
-     * @param      args  The arguments
+     * @param      args  The command line arguments.
      */
     public static void main(final String[] args) {
     	Scanner scan = new Scanner(System.in);
