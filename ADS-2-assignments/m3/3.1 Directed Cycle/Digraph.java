@@ -64,7 +64,7 @@ public class Digraph {
      * @param  v the vertex
      * @return the vertices adjacent from vertex
      * {@code v} in this digraph, as an iterable
-     * Time complexity is O(v).
+     * Time complexity is O(N).
      */
     public Iterable<Integer> adj(final int v) {
         return adj[v];

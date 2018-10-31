@@ -5,6 +5,7 @@ import java.util.Scanner;
 public final class Solution {
     /**
      * Constructs the object.
+     * Time complexity for this method is O(N).
      */
     private Solution() {
     }
