@@ -1,10 +1,5 @@
 Starting audit...
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m3/3.1 Directed Cycle/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m3/3.1 Directed Cycle/Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m3/3.1 Directed Cycle/Solution.java:16:33: Parameter args should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m3/3.1 Directed Cycle/Solution.java:25:19: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m3/3.1 Directed Cycle/Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m3/3.1 Directed Cycle/Digraph.java:6:5: Missing a Javadoc comment. [JavadocVariable]
