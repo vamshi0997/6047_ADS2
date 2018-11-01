@@ -17,11 +17,12 @@ public final class Solution {
         try {
         	content = new String(Files.readAllBytes(Paths.get("Files/" + file1)));
         	content1 = new String(Files.readAllBytes(Paths.get("Files/" + file2)));
-        	//System.out.println(content);
+
         	String[] st = content.split("\n");
         	for(String s: st) {
         		String[] s1 = s.split(",");
-        		for(int i = 1; i < s1.length; i++) {
+        		for(int i = 1; i < s1.length-1; i++) {
+        			//System.out.println(s1[i]);
         			ArrayList<String> arr = new ArrayList<String>();
         			arr.add(s1[i]);
         			hash1.put(Integer.parseInt(s1[0]), arr);

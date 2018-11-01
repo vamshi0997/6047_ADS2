@@ -9,14 +9,16 @@ Starting audit...
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:10: Line is longer than 80 characters (found 102). [LineLength]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:18: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:19: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:22:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:24:28: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:30:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:31: Line is longer than 80 characters (found 118). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:31:107: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:33:16: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:22:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:24:28: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:24:53: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:24:54: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:31:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:32: Line is longer than 80 characters (found 118). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:32:107: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Solution.java:34:16: 'catch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 18 errors.
 Starting audit...
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Digraph.java:7: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m4/Code Camp - WordNet/WordNet/Digraph.java:14: Line has trailing spaces. [RegexpSingleline]
