@@ -35,16 +35,16 @@ public final class Solution {
         		}
         		//System.out.println(a + " " + hash1.get(a).toString().replace("[", "").replace("]","").trim());
         	}
-        	for(String a: hash2.keySet()) {
-        		System.out.println(a + " " + hash2.get(a));
-        	}
+        	// for(String a: hash2.keySet()) {
+        	// 	System.out.println(a + " " + hash2.get(a));
+        	// }
             Digraph d = new Digraph(hash2.size());
         	String[] input1 = content1.split("\n");
-        	// for(String i1: input1) {
-        	// 	String[] s2 = i1.split(",");
-        	// 	d.addEdge(Integer.parseInt(s2[0]), Integer.parseInt(s2[1]));
-        	// }
-         //    System.out.println(d.toString());
+        	for(String i1: input1) {
+        		String[] s2 = i1.split(",");
+        		d.addEdge(Integer.parseInt(s2[0]), Integer.parseInt(s2[1]));
+        	}
+            System.out.println(d.toString());
         } catch(Exception e) {
         	System.out.println("No file");
         }
