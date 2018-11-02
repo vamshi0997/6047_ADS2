@@ -33,20 +33,111 @@ public final class Solution {
         			arr1.add(a);
         			hash2.put(n,arr1);
         		}
-        		//System.out.println(a + " " + hash1.get(a).toString().replace("[", "").replace("]","").trim());
         	}
-        	// for(String a: hash2.keySet()) {
-        	// 	System.out.println(a + " " + hash2.get(a));
-        	// }
+
             Digraph d = new Digraph(hash2.size());
+
         	String[] input1 = content1.split("\n");
+
         	for(String i1: input1) {
+        		try {
         		String[] s2 = i1.split(",");
-        		d.addEdge(Integer.parseInt(s2[0]), Integer.parseInt(s2[1]));
+        		for(int j = 1; j < s2.length; j++) {
+        			//System.out.println("s2 " + s2[0] + " s2() " + s2[j]);
+                    d.addEdge(Integer.parseInt(s2[0]), Integer.parseInt(s2[j]));
+        		}
+        	} catch (Exception e) {
         	}
-            System.out.println(d.toString());
+        	}
+
+        	String query = scan.nextLine();
+        	if(query.equals("Graph")) {
+        		int count = 0;
+        		DirectedCycle dc = new DirectedCycle(d);
+        		if(dc.hasCycle()) {
+        			System.out.println("Cycle detected");
+        			return;
+        		}
+        		for(int k = 0; k < d.V(); k++) {
+        			int outdegree = d.outdegree(k);
+        			if(outdegree == 0) {
+						count++;
+					}
+        		}
+        		if(count > 1) {
+        			System.out.println("Multiple roots");
+        			return;
+        		}
+                System.out.println(d);
+        	} else if(query.equals("Queries")) {
+
+        		while(scan.hasNext()) {
+        		String[] qinput = scan.nextLine().split(" ");
+        		if(qinput[0].equals("null")) {
+        			System.out.println("IllegalArgumentException");
+        			return;
+        		}
+        		// while(scan.hasNext()) {
+        		// String[] ninp = scan.nextLine().split(" ");
+        		// for(String k: ninp) {
+        		// 	System.out.println(k);
+        		// }
+        		
+        		ArrayList<Integer> narr = hash2.get(qinput[0]);
+        		ArrayList<Integer> n1arr = hash2.get(qinput[1]);
+        		// for (Integer a: n1arr) {
+        		// 	System.out.println(a);
+        		// }
+        		
+
+        		int min = d.V();
+        		int dist = 0;
+        		int dist1 = 0;
+        		int shortest = 0;
+                int ancestor = 0;
+                int san = 0;
+        		
+
+
+        		for(Integer nar: narr) {
+        			for(Integer n1ar: n1arr) {
+                        BreadthFirstDirectedPaths bfs = new BreadthFirstDirectedPaths(d, nar);
+                        BreadthFirstDirectedPaths bfs1 = new BreadthFirstDirectedPaths(d, n1ar);
+
+                        for(int l = 0; l < d.V(); l++) {
+                            if(bfs.hasPathTo(l) && bfs.hasPathTo(l)) {
+                                dist = bfs.distTo(l);
+                                //System.out.println("1 " + dist);
+                                dist1 = bfs1.distTo(l);
+                                //System.out.println("2 " + dist1);
+                                shortest = dist + dist1;
+                                ancestor = l;
+
+                                if(shortest < min && shortest >= 0) {
+                        	        min = shortest;
+                        	        //System.out.println("min" + " " + min);
+                        	        san = ancestor;
+                                }
+
+                            }
+
+                        }
+
+         			}
+        		}
+
+                 //System.out.println();
+        		System.out.println(
+        			"distance = " + min + ", ancestor = " + hash1.get(san).toString().replace(
+        				"[","").replace("]",""));
+        		
+
+        		
+
+                }
+        	}
         } catch(Exception e) {
-        	System.out.println("No file");
+        	System.out.println(e);
         }
 	}
 }
