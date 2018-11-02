@@ -77,17 +77,9 @@ public final class Solution {
         			System.out.println("IllegalArgumentException");
         			return;
         		}
-        		// while(scan.hasNext()) {
-        		// String[] ninp = scan.nextLine().split(" ");
-        		// for(String k: ninp) {
-        		// 	System.out.println(k);
-        		// }
         		
         		ArrayList<Integer> narr = hash2.get(qinput[0]);
         		ArrayList<Integer> n1arr = hash2.get(qinput[1]);
-        		// for (Integer a: n1arr) {
-        		// 	System.out.println(a);
-        		// }
         		
 
         		int min = d.V();
