@@ -48,8 +48,8 @@ class PageRank {
 	//System.out.println(map);
 	for(Integer m: map.keySet()) {
 		System.out.println(m + " - " + map.get(m));
-		System.out.println();
 	}
+	System.out.println();
 	return s1;
 	}
 	
