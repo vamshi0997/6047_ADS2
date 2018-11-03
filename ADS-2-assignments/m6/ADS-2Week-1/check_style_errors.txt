@@ -35,13 +35,13 @@ Starting audit...
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:95: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:96: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:97: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:101: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:108: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:134: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:137: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:139: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:140: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:145: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:100: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:107: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:133: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:136: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:138: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:139: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:144: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
@@ -113,7 +113,7 @@ Starting audit...
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Digraph.java:227:5: Class 'Digraph' looks like designed for extension (can be subclassed), but the method 'adjv' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Digraph' final or making the method 'adjv' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Digraph.java:227:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Digraph.java:227:24: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Digraph.java:229:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Digraph.java:229:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Digraph.java:238: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Digraph.java:238: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
