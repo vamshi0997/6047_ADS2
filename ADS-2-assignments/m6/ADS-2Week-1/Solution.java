@@ -89,7 +89,6 @@ public class Solution {
 			}
 		}
 		System.out.println(d);
-		System.out.println();
 		//Digraph d1 = d.reverse();
 		//System.out.println(d1);
 		
