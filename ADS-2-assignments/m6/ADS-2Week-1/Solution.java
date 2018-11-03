@@ -49,7 +49,6 @@ class PageRank {
 	for(Integer m: map.keySet()) {
 		System.out.println(m + " - " + map.get(m));
 	}
-	System.out.println();
 	return s1;
 	}
 	
@@ -98,6 +97,7 @@ public class Solution {
 		// Create page rank object and pass the graph object to the constructor
 		PageRank pr = new PageRank(d);
 		System.out.println(pr);
+		System.out.println();
 		
 		// print the page rank object
 		// double intialpr = (double)1/vertex;
