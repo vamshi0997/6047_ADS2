@@ -9,31 +9,29 @@ class PageRank {
      */
     private Digraph d;
     /**
-     * map is of type of Hashmap.
+     * pagerank is of type of Hashmap.
      */
-    private HashMap<Integer, Double> map;
+    private Digraph d1;
+    /**
+     * pagerank of hashmap type.
+     */
+    private HashMap<Integer, Double> pagerank;
     /**
      * Constructs the object.
      *
-     * @param      d1     { parameter_description }
+     * @param      d2     Digraph.
      */
-    PageRank(final Digraph d1) {
-    this.d = d1;
-    map = new HashMap<Integer, Double>();
-    }
-    /**
-     * Returns a string representation of the object.
-     *
-     * @return     String representation of the object.
-     */
-    public String toString() {
-        String s1 = "";
-        int vertex = d.vertices();
-        Digraph d1 = this.d.reverse();
+    PageRank(final Digraph d2) {
+    this.d = d2;
+    this.d1 = d2.reverse();
+    pagerank = new HashMap<Integer, Double>();
+    int vertex = d.vertices();
+        //Digraph d1 = this.d.reverse();
 
         for (int i = 0; i < vertex; i++) {
-            map.put(i, 1.0 / (double) vertex);
+            pagerank.put(i, 1.0 / (double) vertex);
         }
+
         final int number = 998;
         for (int i = 1; i < number; i++) {
             double[] temp = new double[vertex];
@@ -43,7 +41,8 @@ class PageRank {
                 for (String s: str) {
                     try {
                         int k = Integer.parseInt(s);
-                        sum += (double) map.get(k) / (double) d.outdegree(k);
+                        sum +=
+                        (double) pagerank.get(k) / (double) d.outdegree(k);
                     } catch (Exception e) {
                         sum += (double) 0;
                     }
@@ -52,13 +51,34 @@ class PageRank {
             }
 
             for (int j = 0; j < temp.length; j++) {
-                map.put(j, temp[j]);
+                pagerank.put(j, temp[j]);
             }
 
         }
+
+        getPR(vertex);
+    }
+    /**
+     * Gets the pr.
+     *
+     * @param      vertex  The vertex
+     *
+     * @return     The pr.
+     */
+    public Double getPR(final int vertex) {
+        return pagerank.get(vertex);
+    }
+    /**
+     * Time Complexity is O(V).
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
+        String s1 = "";
         for (int i = 0; i < d.vertices(); i++) {
-            if (map.containsKey(i)) {
-                System.out.println(i + " - " + map.get(i));
+            if (pagerank.containsKey(i)) {
+                System.out.println(i + " - " + pagerank.get(i));
             } else {
                 System.out.println(i + " - " + (double) 0);
             }
@@ -84,6 +104,7 @@ public final class Solution {
 
     }
     /**
+     * Time complexity is O(V^2).
      * main method is used to handle input.
      *
      * @param      args  The arguments
