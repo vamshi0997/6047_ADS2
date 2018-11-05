@@ -17,16 +17,16 @@ class PageRank {
      */
     private HashMap<Integer, Double> pagerank;
     /**
+     * Time complexity is O(V^V-1).
      * Constructs the object.
      *
      * @param      d2     Digraph.
      */
     PageRank(final Digraph d2) {
-    this.d = d2;
-    this.d1 = d2.reverse();
-    pagerank = new HashMap<Integer, Double>();
-    int vertex = d.vertices();
-        //Digraph d1 = this.d.reverse();
+        this.d = d2;
+        this.d1 = d2.reverse();
+        pagerank = new HashMap<Integer, Double>();
+        int vertex = d.vertices();
 
         for (int i = 0; i < vertex; i++) {
             pagerank.put(i, 1.0 / (double) vertex);
