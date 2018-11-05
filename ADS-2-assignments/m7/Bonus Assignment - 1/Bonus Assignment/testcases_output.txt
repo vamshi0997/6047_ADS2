@@ -1,0 +1,60 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+15
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:77)
+	at Solution.main(Solution.java:14)
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+1106
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:78)
+	at Solution.main(Solution.java:14)
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+49950000
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:78)
+	at Solution.main(Solution.java:14)
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+6359060
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:78)
+	at Solution.main(Solution.java:14)
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+115820
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:78)
+	at Solution.main(Solution.java:14)
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+15
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:77)
+	at Solution.main(Solution.java:14)
+----------------------------------------
+
