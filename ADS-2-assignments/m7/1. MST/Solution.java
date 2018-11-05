@@ -10,6 +10,7 @@ public final class Solution {
 
     }
     /**
+     * The time complexity is O(N).
      * Main class is used to handle input and other classes.
      *
      * @param      args  The arguments
@@ -18,17 +19,17 @@ public final class Solution {
         Scanner scan = new Scanner(System.in);
         int vertex = scan.nextInt();
         int edge = scan.nextInt();
-        EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertex);
-        Edge e;
+        EdgeWeightedGraph edgegraph = new EdgeWeightedGraph(vertex);
+        Edge ed;
         //KruskalMST;
         for (int i = 0; i < edge; i++) {
             int vert1 = scan.nextInt();
             int vert2 = scan.nextInt();
             double weight1 = scan.nextDouble();
-            e = new Edge(vert1, vert2, weight1);
-            ewg.addEdge(e);
+            ed = new Edge(vert1, vert2, weight1);
+            edgegraph.addEdge(ed);
         }
-        KruskalMST km = new KruskalMST(ewg);
-        System.out.format("%.5f", km.weight());
+        KruskalMST mst = new KruskalMST(edgegraph);
+        System.out.format("%.5f", mst.weight());
     }
 }
