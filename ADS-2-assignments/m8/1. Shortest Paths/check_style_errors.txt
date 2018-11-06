@@ -1,0 +1,25 @@
+Starting audit...
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/Solution.java:3: First sentence should end with a period. [JavadocStyle]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/Solution.java:7: First sentence should end with a period. [JavadocStyle]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/Solution.java:25:12: 'for' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 5 errors.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/IndexMinPQ.java:265:23: Parameter k should be final. [FinalParameters]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/IndexMinPQ.java:265:31: '{' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/IndexMinPQ.java:277:23: Parameter k should be final. [FinalParameters]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/IndexMinPQ.java:277:31: '{' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 4 errors.
+Starting audit...
+Audit done.
