@@ -17,6 +17,7 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
+        DijkstraSP dk;
         HashMap<String, Integer> rail =
         new HashMap<String, Integer>();
         String[] line = scan.nextLine().split(" ");
@@ -38,7 +39,6 @@ public final class Solution {
         }
 
         int input = Integer.parseInt(scan.nextLine());
-        DijkstraSP dk;
         for (int j = 0; j < input; j++) {
             String[] sd = scan.nextLine().split(" ");
             int source = rail.get(sd[0]);
