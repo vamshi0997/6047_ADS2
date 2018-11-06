@@ -46,7 +46,7 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 distance = 7, ancestor = macromolecule supermolecule
 distance = 7, ancestor = macromolecule supermolecule
@@ -58,17 +58,22 @@ distance = 1, ancestor = animal_oil
 Your Output: 
 distance = 7, ancestor = macromolecule supermolecule
 distance = 7, ancestor = macromolecule supermolecule
-java.lang.NullPointerException
+distance = 9, ancestor = macromolecule supermolecule
+distance = 8, ancestor = macromolecule supermolecule
+distance = 7, ancestor = lipid lipide lipoid
+distance = 1, ancestor = animal_oil
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 distance = 3, ancestor = wax
 distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-java.lang.NullPointerException
+distance = 3, ancestor = wax
+distance = 13, ancestor = thing
+distance = 2, ancestor = wax
 ----------------------------------------
 
 ########## Testcase 4: Passed ##########
@@ -236,7 +241,23 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-java.lang.IllegalArgumentException: vertex 82173 is not between 0 and 76221
+distance = 11, ancestor = whole unit
+distance = 8, ancestor = organism being
+distance = 14, ancestor = entity
+distance = 13, ancestor = object physical_object
+distance = 2, ancestor = decade decennary decennium
+distance = 8, ancestor = substance
+distance = 2, ancestor = port
+distance = 2, ancestor = letter letter_of_the_alphabet alphabetic_character
+distance = 2, ancestor = letter letter_of_the_alphabet alphabetic_character
+distance = 12, ancestor = person individual someone somebody mortal soul
+distance = 15, ancestor = abstraction abstract_entity
+distance = 0, ancestor = 9/11 9-11 September_11 Sept._11 Sep_11
+distance = 2, ancestor = digit figure
+distance = 8, ancestor = definite_quantity
+distance = 10, ancestor = abstraction abstract_entity
+distance = 0, ancestor = era epoch
+distance = 8, ancestor = abstraction abstract_entity
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########

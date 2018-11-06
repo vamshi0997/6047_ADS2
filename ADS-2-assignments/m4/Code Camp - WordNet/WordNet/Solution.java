@@ -2,6 +2,7 @@ import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.Arrays;
 public final class Solution {
 	private Solution() {
 
@@ -18,20 +19,29 @@ public final class Solution {
         	content = new String(Files.readAllBytes(Paths.get("Files/" + file1)));
         	content1 = new String(Files.readAllBytes(Paths.get("Files/" + file2)));
 
+
         	String[] input = content.split("\n");
+        	ArrayList<String> arr;
         	for(String s: input) {
         		String[] s1 = s.split(",");
-        		for(int i = 1; i < s1.length-1; i++) {
-        			ArrayList<String> arr = new ArrayList<String>();
-        			arr.add(s1[i]);
+        		String[] s2 = s1[1].split(" ");
+        		arr = new ArrayList<String>();
+        		for(int i = 0; i < s2.length; i++) {
+        			arr.add(s2[i]);
         			hash1.put(Integer.parseInt(s1[0]), arr);
         		}
         	}
+
         	for(Integer a: hash1.keySet()) {
-        		ArrayList<Integer> arr1 = new ArrayList<Integer>();
+                ArrayList<Integer> arr1 = new ArrayList<Integer>();;
         		for(String n: hash1.get(a)) {
         			arr1.add(a);
-        			hash2.put(n,arr1);
+        			if(hash2.containsKey(n)) {
+                        hash2.get(n).add(a);
+                    } else {
+                        hash2.put(n,arr1);    
+                    }
+                    
         		}
         	}
 
@@ -39,16 +49,26 @@ public final class Solution {
 
         	String[] input1 = content1.split("\n");
 
+
+
         	for(String i1: input1) {
         		try {
         		String[] s2 = i1.split(",");
-        		for(int j = 1; j < s2.length; j++) {
-        			//System.out.println("s2 " + s2[0] + " s2() " + s2[j]);
-                    d.addEdge(Integer.parseInt(s2[0]), Integer.parseInt(s2[j]));
-        		}
-        	} catch (Exception e) {
+        		    for(int j = 1; j < s2.length; j++) {
+                       d.addEdge(Integer.parseInt(s2[0]), Integer.parseInt(s2[j]));
+        		    }
+        	    } catch (Exception e) {
+        	    }
         	}
-        	}
+
+            // System.out.println(hash1);
+            // System.out.println();
+            // System.out.println();
+            // System.out.println();
+            // System.out.println();
+            // System.out.println(hash2);
+
+
 
         	String query = scan.nextLine();
         	if(query.equals("Graph")) {
@@ -77,58 +97,37 @@ public final class Solution {
         			System.out.println("IllegalArgumentException");
         			return;
         		}
-        		
-        		ArrayList<Integer> narr = hash2.get(qinput[0]);
-        		ArrayList<Integer> n1arr = hash2.get(qinput[1]);
-        		
 
-        		int min = d.V();
-        		int dist = 0;
-        		int dist1 = 0;
+        		
+        		ArrayList<Integer> nar = hash2.get(qinput[0]);
+        		ArrayList<Integer> n1ar = hash2.get(qinput[1]);
+
+        		int min = Integer.MAX_VALUE;
         		int shortest = 0;
                 int ancestor = 0;
-                int san = 0;
-        		
-
-
-        		for(Integer nar: narr) {
-        			for(Integer n1ar: n1arr) {
-                        BreadthFirstDirectedPaths bfs = new BreadthFirstDirectedPaths(d, nar);
-                        BreadthFirstDirectedPaths bfs1 = new BreadthFirstDirectedPaths(d, n1ar);
-
+        		for(int i = 0; i < nar.size(); i++) {
+        			for(int j = 0; j < n1ar.size(); j++) {
+                        BreadthFirstDirectedPaths bfs = new BreadthFirstDirectedPaths(d, nar.get(i));
+                        BreadthFirstDirectedPaths bfs1 = new BreadthFirstDirectedPaths(d, n1ar.get(j));
                         for(int l = 0; l < d.V(); l++) {
-                            if(bfs.hasPathTo(l) && bfs.hasPathTo(l)) {
-                                dist = bfs.distTo(l);
-                                //System.out.println("1 " + dist);
-                                dist1 = bfs1.distTo(l);
-                                //System.out.println("2 " + dist1);
-                                shortest = dist + dist1;
-                                ancestor = l;
-
-                                if(shortest < min && shortest >= 0) {
+                            if(bfs.hasPathTo(l) && bfs1.hasPathTo(l)) {
+                                shortest = bfs.distTo(l) + bfs1.distTo(l);
+                                if(shortest < min) {
                         	        min = shortest;
-                        	        //System.out.println("min" + " " + min);
-                        	        san = ancestor;
+                        	        ancestor = l;
                                 }
-
                             }
-
                         }
-
-         			}
+                    }
         		}
-
-                 //System.out.println();
         		System.out.println(
-        			"distance = " + min + ", ancestor = " + hash1.get(san).toString().replace(
-        				"[","").replace("]",""));
-        		
-
-        		
-
+        			"distance = " + min + ", ancestor = " + hash1.get(ancestor).toString().replace(
+        				"[","").replace("]","").replace(",", ""));
                 }
-        	}
+        }
+
         } catch(Exception e) {
+        	e.printStackTrace();
         	System.out.println(e);
         }
 	}
