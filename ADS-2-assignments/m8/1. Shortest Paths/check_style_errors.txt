@@ -9,11 +9,9 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/IndexMinPQ.java:265:23: Parameter k should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/IndexMinPQ.java:265:31: '{' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/IndexMinPQ.java:277:23: Parameter k should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/IndexMinPQ.java:277:31: '{' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/IndexMinPQ.java:267:37: '{' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m8/1. Shortest Paths/IndexMinPQ.java:280:37: '{' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.

@@ -206,10 +206,12 @@ implements Iterable<Integer> {
     }
 
     /**
-     * Increase the key associated with index {@code i} to the specified value.
+     * Increase the key associated with index
+     * {@code i} to the specified value.
      *
      * @param  i the index of the key to increase
-     * @param  key increase the key associated with index {@code i} to this key
+     * @param  key increase the key associated with index
+     * {@code i} to this key
      * Time complexity is O(log N).
      */
     public void increaseKey(final int i, final Key key) {
@@ -259,10 +261,11 @@ implements Iterable<Integer> {
     /**
      * swim method.
      *
-     * @param      k     value.
+     * @param      t     value.
      * Time complexity is O(log N).
      */
-    private void swim(int k) {//
+    private void swim(final int t) {//
+        int k = t;
         while (k > 1 && greater(k / 2, k)) {
             exch(k, k / 2);
             k = k / 2;
@@ -271,10 +274,11 @@ implements Iterable<Integer> {
     /**
      * sink method.
      *
-     * @param      k     integer.
+     * @param      t     integer.
      * Time complexity is O(log N).
      */
-    private void sink(int k) {//
+    private void sink(final int t) {//
+        int k = t;
         while (2 * k <= n) {
             int j = 2 * k;
             if (j < n && greater(j, j + 1)) {
