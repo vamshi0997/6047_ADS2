@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
  * @param      <Key>   Key.
  */
 public class IndexMinPQ<Key extends Comparable<Key>>
-implements Iterable<Integer> {
+    implements Iterable<Integer> {
     /**
      * maximum number of elements on PQ.
      */
@@ -264,7 +264,7 @@ implements Iterable<Integer> {
      * @param      t     value.
      * Time complexity is O(log N).
      */
-    private void swim(final int t) {//
+    private void swim(final int t) {
         int k = t;
         while (k > 1 && greater(k / 2, k)) {
             exch(k, k / 2);
@@ -277,7 +277,7 @@ implements Iterable<Integer> {
      * @param      t     integer.
      * Time complexity is O(log N).
      */
-    private void sink(final int t) {//
+    private void sink(final int t) {
         int k = t;
         while (2 * k <= n) {
             int j = 2 * k;
