@@ -220,7 +220,7 @@ Your Output:
 IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 13: Failed ##########
+########## Testcase 13: Passed ##########
 Expected Output: 
 distance = 11, ancestor = whole unit
 distance = 8, ancestor = organism being
@@ -254,8 +254,8 @@ distance = 12, ancestor = person individual someone somebody mortal soul
 distance = 15, ancestor = abstraction abstract_entity
 distance = 0, ancestor = 9/11 9-11 September_11 Sept._11 Sep_11
 distance = 2, ancestor = digit figure
-distance = 8, ancestor = definite_quantity
-distance = 10, ancestor = abstraction abstract_entity
+distance = 13, ancestor = abstraction abstract_entity
+distance = 12, ancestor = abstraction abstract_entity
 distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 ----------------------------------------

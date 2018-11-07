@@ -1,89 +1,51 @@
-// import java.util.ArrayList;
-// public class SAP {
-//     Digraph d;
-//     // constructor takes a digraph (not necessarily a DAG)
-//     public SAP(Digraph d1) {
-//         d = d1;
-//     }
-
-//     // // length of shortest ancestral path between v and w; -1 if no such path
-//     // public int length(int v, int w)
-
-//     // // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
-//     // public int ancestor(int v, int w)
-
-//     // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
-//     public int length(ArrayList<Integer> v, ArrayList<Integer> w) {
-//         int min = d.V();
-//         int tempOne = 0;
-//         for(int i = 0; i < v.size(); i++) {
-//             for(int k = 0; k < w.size(); k++) {
-//             BreadthFirstDirectedPaths bfsOne = new BreadthFirstDirectedPaths(d, v.get(i));
-//             BreadthFirstDirectedPaths bfsTwo = new BreadthFirstDirectedPaths(d, w.get(k));
-//             for(int j = 0; j < d.V(); j++) {
-//                 if(bfsOne.hasPathTo(j) && bfsTwo.hasPathTo(j)) {
-//                     int sum = bfsOne.distTo(j) + bfsTwo.distTo(j);
-//                     if(sum < min) {
-//                         min = sum;
-//                         tempOne = j;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     int[] result = {min, tempOne};
-//     return result;
-//     }
-
-//     // // a common ancestor that participates in shortest ancestral path; -1 if no such path
-//     // public int ancestor(Iterable<Integer> v, Iterable<Integer> w)
-
-//     // // do unit testing of this class
-//     // public static void main(String[] args)
-// }
-
-
-
 import java.util.ArrayList;
+/**
+ * Class for sap.
+ */
 public class SAP {
-    Digraph graph;
-    // constructor takes a digraph (not necessarily a DAG)
-    public SAP(Digraph G) {
-        graph = G;
+    /**
+     * dgraph of the type Digraph.
+     */
+    private Digraph dgraph;
+    /**
+     * Constructs the object.
+     * @param      g     Digraph.
+     */
+    public SAP(final Digraph g) {
+        dgraph = g;
     }
-
-    // // length of shortest ancestral path between v and w; -1 if no such path
-    // public int length(int v, int w)
-
-    // // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
-    // public int ancestor(int v, int w)
-
-    // // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
-    public int[] length(ArrayList<Integer> listOne, ArrayList<Integer> listTwo) {
-        int min = graph.V();
-        int tempOne = 0;
-        for(int i = 0; i < listOne.size(); i++) {
-            for(int k = 0; k < listTwo.size(); k++) {
-            BreadthFirstDirectedPaths bfsOne = new BreadthFirstDirectedPaths(graph, listOne.get(i));
-            BreadthFirstDirectedPaths bfsTwo = new BreadthFirstDirectedPaths(graph, listTwo.get(k));
-            for(int j = 0; j < graph.V(); j++) {
-                if(bfsOne.hasPathTo(j) && bfsTwo.hasPathTo(j)) {
-                    int sum = bfsOne.distTo(j) + bfsTwo.distTo(j);
-                    if(sum < min) {
-                        min = sum;
-                        tempOne = j;
+    /**
+     * This finds out the shortest ancestral path between two vertices.
+     * @param      array1     ArrayList.
+     * @param      array2     ArrayList.
+     * @return     integer array.
+     * Time complexity for this method is
+     * O(N^2 * M) where array1 is length of
+     * array list and array2 is length of array list
+     * and array1 is no of vertices.
+     */
+    public int[] length(final ArrayList<Integer> array1,
+        final ArrayList<Integer> array2) {
+        int min = dgraph.vertices();
+        int temp = 0;
+        for (int i = 0; i < array1.size(); i++) {
+            for (int j = 0; j < array2.size(); j++) {
+                BreadthFirstDirectedPaths bfs1 =
+                new BreadthFirstDirectedPaths(dgraph, array1.get(i));
+                BreadthFirstDirectedPaths bfs2 =
+                new BreadthFirstDirectedPaths(dgraph, array2.get(j));
+                for (int k = 0; k < dgraph.vertices(); k++) {
+                    if (bfs1.hasPathTo(k) && bfs2.hasPathTo(k)) {
+                        int distance = bfs1.distTo(k) + bfs2.distTo(k);
+                        if (distance < min) {
+                            min = distance;
+                            temp = k;
+                        }
                     }
                 }
             }
         }
+        int[] total = {min, temp};
+        return total;
     }
-    int[] result = {min, tempOne};
-    return result;
-        }
-
-    // // a common ancestor that participates in shortest ancestral path; -1 if no such path
-    // public int ancestor(Iterable<Integer> v, Iterable<Integer> w)
-
-    // // do unit testing of this class
-    // public static void main(String[] args)
 }
