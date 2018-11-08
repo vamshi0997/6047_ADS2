@@ -3,12 +3,12 @@ public class SeamCarver {
 	Picture pic;
 	// create a seam carver object based on the given picture
 	public SeamCarver(Picture picture) {
-		this.pic = picture;
+		this.pic = new Picture(picture);
 
 	}
 	// current picture
 	public Picture picture() {
-		return null;
+		return new Picture(pic);
 	}
 	// width of current picture
 	public int width() {
