@@ -1,10 +1,5 @@
 Starting audit...
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:27:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:46: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:46:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:59: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -31,32 +26,21 @@ Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:6: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:7: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:8: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:15: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:28:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:29:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:32: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:33:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:34:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:27: First sentence should end with a period. [JavadocStyle]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:31: First sentence should end with a period. [JavadocStyle]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:68:22: Parameter item should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:83: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:98: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:105: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:115: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:118: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:120: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:127: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:128:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:130:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:130:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:130:29: Parameter first should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:130:40: 'first' hides a field. [HiddenField]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:134:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:138:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:142:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:143: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:145: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:109: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:119: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:133: Missing a Javadoc comment. [JavadocType]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:134:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:136:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:136:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:136:29: Parameter first should be final. [FinalParameters]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:136:40: 'first' hides a field. [HiddenField]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:140:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:144:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:148:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:149: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:151: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 16 errors.

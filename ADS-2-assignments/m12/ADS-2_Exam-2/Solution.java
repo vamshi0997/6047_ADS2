@@ -24,7 +24,7 @@ public final class Solution {
         // Self loops are not allowed...
         // Parallel Edges are allowed...
         // Take the Graph input here...
-        for(int i = 0; i < connection; i++) {
+        for (int i = 0; i < connection; i++) {
             String[] input = scan.nextLine().split(" ");
             ed = new Edge(Integer.parseInt(input[0]), Integer.parseInt(
                 input[1]), Double.parseDouble(input[2]));
@@ -43,7 +43,8 @@ public final class Solution {
             String[] dinput = scan.nextLine().split(" ");
             DijkstraSP dk = new DijkstraSP(
                 ewg, Integer.parseInt(dinput[0]));
-            if(dk.distTo(Integer.parseInt(dinput[1])) == Double.POSITIVE_INFINITY) {
+            if (dk.distTo(Integer.parseInt(
+                dinput[1])) == Double.POSITIVE_INFINITY) {
                 System.out.println("No Path Found.");
                 break;
             }
@@ -56,7 +57,8 @@ public final class Solution {
 
         case "ViaPaths":
             // Handle the case of ViaPaths, where three integers are given.
-            // First is the source and second is the via is the one where path should pass throuh.
+            // First is the source and second is the via is
+            // the one where path should pass throuh.
             // third is the destination.
             // If the path exists print the distTo between them.
             // Other wise print "No Path Found."
@@ -81,7 +83,6 @@ public final class Solution {
                         arr.add(str[l]);
                     }
                 }
-                //System.out.println(i.toEdge());
             }
             for (Edge j: dk2.pathTo(Integer.parseInt(vinput[2]))) {
                 String[] str1 = j.toEdge().split(" ");
