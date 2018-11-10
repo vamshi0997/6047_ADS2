@@ -30,6 +30,7 @@ public class Solution {
 			ewg.addEdge(ed);
 
 		}
+
 		String caseToGo = scan.nextLine();
 		switch (caseToGo) {
 		case "Graph":
@@ -38,6 +39,14 @@ public class Solution {
 			break;
 
 		case "DirectedPaths":
+		    String[] dinput = scan.nextLine().split(" ");
+		    DijkstraUndirectedSP dk = new DijkstraUndirectedSP(
+		    	ewg, Integer.parseInt(dinput[0]));
+		    if(dk.distTo(Integer.parseInt(dinput[1])) == Double.POSITIVE_INFINITY) {
+		    	System.out.println("No Path Found.");
+		    	break;
+		    }
+		    System.out.println(dk.distTo(Integer.parseInt(dinput[1])));
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
