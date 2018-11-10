@@ -16,22 +16,3 @@ Starting audit...
 Audit done.
 Starting audit...
 Audit done.
-Starting audit...
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:27: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:31: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:68:22: Parameter item should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:109: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:119: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:133: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:134:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:136:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:136:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:136:29: Parameter first should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:136:40: 'first' hides a field. [HiddenField]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:140:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:144:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:148:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:149: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Stack.java:151: Line has trailing spaces. [RegexpSingleline]
-Audit done.
-Checkstyle ends with 16 errors.
