@@ -114,7 +114,7 @@ public class Edge implements Comparable<Edge> {
      * @return     String representation of the object.
      */
     public String toString() {
-        return this.v + " - " + this.w + " " + this.weight() + "0000" ;
+        return this.v + "-" + this.w + " " + this.weight() + "0000" ;
     }
     /**
      * The time complexity is O(1).
