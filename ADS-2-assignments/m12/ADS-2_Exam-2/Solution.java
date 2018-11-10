@@ -11,6 +11,7 @@ public final class Solution {
 
     }
     /**
+     * Time complexity is O(ElogV).
      * Main method handles the input.
      *
      * @param      args  The arguments
