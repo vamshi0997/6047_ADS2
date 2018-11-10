@@ -116,6 +116,9 @@ public class Edge implements Comparable<Edge> {
     public String toString() {
         return this.v + "-" + this.w + " " + this.weight() + "0000" ;
     }
+    public String toEdge() {
+        return this.w + " " + this.v;
+    }
     /**
      * The time complexity is O(1).
      * Compares two edges by weight.

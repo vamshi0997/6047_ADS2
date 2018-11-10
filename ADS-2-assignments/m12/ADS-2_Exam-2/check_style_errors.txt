@@ -1,65 +1,22 @@
 Starting audit...
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:5: Class Solution should be declared as final. [FinalClass]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:26:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:28: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:45: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:45:23: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:50: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:57: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:58: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:69: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:6: Class Solution should be declared as final. [FinalClass]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:27:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:29: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:46: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:46:23: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:51: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:58: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:59: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:70: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:79:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:80:23: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:88:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:89:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:94: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
-Starting audit...
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:8: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:9: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:15: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:19: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:19:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:20: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:20:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:21:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:32:33: Parameter graph should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:32:58: Parameter s should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:34: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:35: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:43: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:52: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:61:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:61:24: Parameter e should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:61:32: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:66: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:67: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:72: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:76: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:77: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:80:26: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:94:30: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:100: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:103: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:107:34: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:109: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:123:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:123:27: Parameter graph should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:123:52: Parameter s should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:139: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:146: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:157: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:159: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:161: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:172:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:172:33: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:173:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:174: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:175: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:175:93: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/DijkstraUndirectedSP.java:175:94: '-' is not followed by whitespace. [WhitespaceAround]
-Audit done.
-Checkstyle ends with 45 errors.
+Checkstyle ends with 16 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -79,8 +36,10 @@ Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Edge.java:112:8: Unused @param tag for 'e'. [JavadocMethod]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Edge.java:117:68: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Edge.java:119:5: Class 'Edge' looks like designed for extension (can be subclassed), but the method 'toEdge' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Edge' final or making the method 'toEdge' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Edge.java:119:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...

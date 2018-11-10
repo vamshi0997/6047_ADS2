@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 /**
  * Class for solution.
  */
@@ -71,10 +72,27 @@ public class Solution {
             	break;
             }
             System.out.println(d1 + d2);
+            ArrayList<String> arr = new ArrayList<String>();
             //System.out.println(dk1.pathTo(Integer.parseInt(vinput[1])));
             for (Edge i: dk1.pathTo(Integer.parseInt(vinput[1]))) {
-            	System.out.println(i);
+            	String[] str = i.toEdge().split(" ");
+            	for(int l = 0; l < str.length; l++) {
+                    if(!arr.contains(str[l])) {
+                    	arr.add(str[l]);
+                    }
+            	}
+            	//System.out.println(i.toEdge());
             }
+            for (Edge j: dk2.pathTo(Integer.parseInt(vinput[2]))) {
+                String[] str1 = j.toEdge().split(" ");
+                for(int k = 0; k < str1.length; k++) {
+                	if(!arr.contains(str1[k])) {
+                    	arr.add(str1[k]);
+                    }
+                }
+            }
+            System.out.println(arr.toString().replace("[", "").replace("]", "").replace(",", ""));
+
             System.out.println();
             break;
 
