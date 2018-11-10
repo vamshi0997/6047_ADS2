@@ -1,22 +1,10 @@
 Starting audit...
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:6: Class Solution should be declared as final. [FinalClass]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:27:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:29: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:46: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:46:23: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:51: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:58: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:59: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:70: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:79:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:80:23: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:88:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:89:27: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:94: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:27:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:46: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:46:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:59: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...
