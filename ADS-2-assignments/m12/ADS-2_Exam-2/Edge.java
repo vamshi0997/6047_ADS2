@@ -108,15 +108,17 @@ public class Edge implements Comparable<Edge> {
     }
     /**
      * Returns a string representation of the object.
-     *
-     * @param      e     { parameter_description }
-     *
      * @return     String representation of the object.
      */
     public String toString() {
-        return this.v + "-" + this.w + " " + this.weight() + "0000" ;
+        return this.v + "-" + this.w + " " + this.weight() + "0000";
     }
-    public String toEdge() {
+    /**
+     * EdgeTo method.
+     *
+     * @return     edges.
+     */
+    public String toEdge1() {
         return this.w + " " + this.v;
     }
     /**

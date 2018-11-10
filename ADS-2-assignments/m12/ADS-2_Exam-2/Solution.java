@@ -77,7 +77,7 @@ public final class Solution {
             System.out.println(d1 + d2);
             ArrayList<String> arr = new ArrayList<String>();
             for (Edge i: dk1.pathTo(Integer.parseInt(vinput[1]))) {
-                String[] str = i.toEdge().split(" ");
+                String[] str = i.toEdge1().split(" ");
                 for (int l = 0; l < str.length; l++) {
                     if (!arr.contains(str[l])) {
                         arr.add(str[l]);
@@ -85,7 +85,7 @@ public final class Solution {
                 }
             }
             for (Edge j: dk2.pathTo(Integer.parseInt(vinput[2]))) {
-                String[] str1 = j.toEdge().split(" ");
+                String[] str1 = j.toEdge1().split(" ");
                 for (int k = 0; k < str1.length; k++) {
                     if (!arr.contains(str1[k])) {
                         arr.add(str1[k]);
