@@ -40,7 +40,7 @@ public class Solution {
 
 		case "DirectedPaths":
 		    String[] dinput = scan.nextLine().split(" ");
-		    DijkstraUndirectedSP dk = new DijkstraUndirectedSP(
+		    DijkstraSP dk = new DijkstraSP(
 		    	ewg, Integer.parseInt(dinput[0]));
 		    if(dk.distTo(Integer.parseInt(dinput[1])) == Double.POSITIVE_INFINITY) {
 		    	System.out.println("No Path Found.");
@@ -49,7 +49,7 @@ public class Solution {
 		    System.out.println(dk.distTo(Integer.parseInt(dinput[1])));
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
-			// If the path exists print the distance between them.
+			// If the path exists print the distTo between them.
 			// Other wise print "No Path Found."
 			break;
 
@@ -57,9 +57,26 @@ public class Solution {
 			// Handle the case of ViaPaths, where three integers are given.
 			// First is the source and second is the via is the one where path should pass throuh.
 			// third is the destination.
-			// If the path exists print the distance between them.
+			// If the path exists print the distTo between them.
 			// Other wise print "No Path Found."
-			break;
+			String[] vinput = scan.nextLine().split(" ");
+			DijkstraSP dk1 = new DijkstraSP(
+		    	ewg, Integer.parseInt(vinput[0]));
+			Double d1 = dk1.distTo(Integer.parseInt(vinput[1]));
+			DijkstraSP dk2 = new DijkstraSP(
+		    	ewg, Integer.parseInt(vinput[1]));
+            Double d2 = dk2.distTo(Integer.parseInt(vinput[2]));
+            if (d1 == Double.POSITIVE_INFINITY || d2 == Double.POSITIVE_INFINITY) {
+            	System.out.println("No Path Found.");
+            	break;
+            }
+            System.out.println(d1 + d2);
+            //System.out.println(dk1.pathTo(Integer.parseInt(vinput[1])));
+            for (Edge i: dk1.pathTo(Integer.parseInt(vinput[1]))) {
+            	System.out.println(i);
+            }
+            System.out.println();
+            break;
 
 		default:
 			break;
