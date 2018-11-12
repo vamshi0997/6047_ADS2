@@ -77,7 +77,7 @@ class Quick3string {
 
     /**
      * sort from a[low] to a[high], starting at the dth character.
-     * The time complexity is O(N*N).
+     * The time complexity is O(N^2).
      *
      *
      * @param a String array.
