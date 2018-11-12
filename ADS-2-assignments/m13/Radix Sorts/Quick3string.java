@@ -1,99 +1,136 @@
 /**
- *  The {@code Quick3string} class provides static methods for sorting an
- *  array of strings using 3-way radix quicksort.
- *  <p>
- *  For additional documentation,
- *  see <a href="https://algs4.cs.princeton.edu/51radix">Section 5.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
+ * Class for quick 3 string.
  */
-public class Quick3string {
-    private static final int CUTOFF =  15;   // cutoff to insertion sort
-
-    // do not instantiate
-    Quick3string() { } 
-
-    /**  
-     * Rearranges the array of strings in ascending order.
-     *
-     * @param a the array to be sorted
+class Quick3string {
+    /**
+     * cutoff for insertion sort.
      */
-    public static void sort(String[] a) {
-        //StdRandom.shuffle(a);
-        sort(a, 0, a.length-1, 0);
-        assert isSorted(a);
+    private static final int CUTOFF =  15;
+
+    /**
+     * Rearranges the array of strings in ascending order.
+     * The time complexity is O(2NlogN).
+     *
+     * @param arr String array which is going to be sort.
+     */
+    public void sort(final String[] arr) {
+        sort(arr, 0, arr.length - 1, 0);
     }
 
-    // return the dth character of s, -1 if d = length of s
-    private static int charAt(String s, int d) { 
-        assert d >= 0 && d <= s.length();
-        if (d == s.length()) return -1;
-        return s.charAt(d);
+    /**
+     * return the dth character of s, -1 if d = length of s.
+     * The time complexity is O(1).
+     *
+     * @param str String.
+     * @param index index.
+     *
+     * @return ascii value of that character.
+     */
+    private int charAt(final String str, final int index) {
+        assert index >= 0 && index <= str.length();
+        if (index == str.length()) {
+            return -1;
+        }
+        return str.charAt(index);
     }
 
 
-    // 3-way string quicksort a[lo..hi] starting at dth character
-    private static void sort(String[] a, int lo, int hi, int d) { 
+    /**
+     * 3-way string quicksort a[low..high].
+     *  starting at dth character.
+     * The time complexity is O(2NlogN).
+     *
+     * @param arr String array.
+     * @param low The lower.
+     * @param high The higher.
+     * @param d index.
+     */
+    private void sort(final String[] arr, final int low,
+        final int high, final int d) {
 
         // cutoff to insertion sort for small subarrays
-        if (hi <= lo + CUTOFF) {
-            insertion(a, lo, hi, d);
+        if (high <= low + CUTOFF) {
+            insertion(arr, low, high, d);
             return;
         }
 
-        int lt = lo, gt = hi;
-        int v = charAt(a[lo], d);
-        int i = lo + 1;
+        int lt = low, gt = high;
+        int v = charAt(arr[low], d);
+        int i = low + 1;
         while (i <= gt) {
-            int t = charAt(a[i], d);
-            if      (t < v) exch(a, lt++, i++);
-            else if (t > v) exch(a, i, gt--);
-            else              i++;
+            int t = charAt(arr[i], d);
+            if (t < v)  {
+                exch(arr, lt++, i++);
+            } else if (t > v) {
+                exch(arr, i, gt--);
+            } else {
+                i++;
+            }
         }
 
-        // a[lo..lt-1] < v = a[lt..gt] < a[gt+1..hi]. 
-        sort(a, lo, lt-1, d);
-        if (v >= 0) sort(a, lt, gt, d+1);
-        sort(a, gt+1, hi, d);
+        // arr[low..lt-1] < v = arr[lt..gt] < arr[gt+1..high].
+        sort(arr, low, lt - 1, d);
+        if (v >= 0) {
+            sort(arr, lt, gt, d + 1);
+        }
+        sort(arr, gt + 1, high, d);
     }
 
-    // sort from a[lo] to a[hi], starting at the dth character
-    private static void insertion(String[] a, int lo, int hi, int d) {
-        for (int i = lo; i <= hi; i++)
-            for (int j = i; j > lo && less(a[j], a[j-1], d); j--)
-                exch(a, j, j-1);
+    /**
+     * sort from a[low] to a[high], starting at the dth character.
+     * The time complexity is O(N*N).
+     *
+     *
+     * @param      a     { String array }
+     * @param      low    The lower
+     * @param      high    The higher
+     * @param      d     { index }
+     */
+    private void insertion(final String[] a,
+        final int low, final int high, final int d) {
+        for (int i = low; i <= high; i++) {
+            for (int j = i; j > low && less(a[j], a[j - 1], d); j--) {
+                exch(a, j, j - 1);
+            }
+        }
     }
 
-    // exchange a[i] and a[j]
-    private static void exch(String[] a, int i, int j) {
+    /**
+     * exchange a[i] and a[j].
+     * The time complexity is O(1).
+     *
+     *
+     * @param      a     { String array }
+     * @param      i     { index1 }
+     * @param      j     { index2 }
+     */
+    private void exch(final String[] a, final int i, final int j) {
         String temp = a[i];
         a[i] = a[j];
         a[j] = temp;
     }
 
-    // is v less than w, starting at character d
-    // DEPRECATED BECAUSE OF SLOW SUBSTRING EXTRACTION IN JAVA 7
-    // private static boolean less(String v, String w, int d) {
-    //    assert v.substring(0, d).equals(w.substring(0, d));
-    //    return v.substring(d).compareTo(w.substring(d)) < 0; 
-    // }
-
-    // is v less than w, starting at character d
-    private static boolean less(String v, String w, int d) {
-        assert v.substring(0, d).equals(w.substring(0, d));
-        for (int i = d; i < Math.min(v.length(), w.length()); i++) {
-            if (v.charAt(i) < w.charAt(i)) return true;
-            if (v.charAt(i) > w.charAt(i)) return false;
+    /**
+     * less function.
+     * The time complexity is O(W).
+     *
+     * @param      str1     { String a }
+     * @param      str2     { String b }
+     * @param      d     { index }
+     *
+     * @return     { boolean }
+     */
+    private boolean less(final String str1,
+        final String str2, final int d) {
+        //assert str1.substring(0, d).equals(str2.substring(0, d));
+        for (int i = d; i < Math.min(str1.length(), str2.length()); i++) {
+            if (str1.charAt(i) < str2.charAt(i))  {
+                return true;
+            }
+            if (str1.charAt(i) > str2.charAt(i)) {
+                return false;
+            }
         }
-        return v.length() < w.length();
-    }
-
-    // is the array sorted
-    private static boolean isSorted(String[] a) {
-        for (int i = 1; i < a.length; i++)
-            if (a[i].compareTo(a[i-1]) < 0) return false;
-        return true;
+        return str1.length() < str2.length();
     }
 }

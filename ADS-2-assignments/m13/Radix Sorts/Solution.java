@@ -18,12 +18,12 @@ public final class Solution {
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int num = Integer.parseInt(scan.nextLine());
-		String[] array = new String[num];
-	    for(int i = 0; i < num; i++) {
-	    	array[i] = scan.nextLine();
+		String[] arrayofstrings = new String[num];
+	    for (int i = 0; i < num; i++) {
+	    	arrayofstrings[i] = scan.nextLine();
 	    }
 	    Quick3string qs = new Quick3string();
-	    qs.sort(array);
-	    System.out.println(Arrays.toString(array));
+	    qs.sort(arrayofstrings);
+	    System.out.println(Arrays.toString(arrayofstrings));
 	}
 }
