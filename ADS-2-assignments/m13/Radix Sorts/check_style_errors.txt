@@ -1,6 +1,4 @@
 Starting audit...
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.

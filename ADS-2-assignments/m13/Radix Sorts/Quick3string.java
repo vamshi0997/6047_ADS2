@@ -9,7 +9,7 @@ class Quick3string {
 
     /**
      * Rearranges the array of strings in ascending order.
-     * The time complexity is O(2NlogN).
+     * The time complexity is O(W*NlogN).
      *
      * @param arr String array which is going to be sort.
      */
@@ -34,11 +34,10 @@ class Quick3string {
         return str.charAt(index);
     }
 
-
     /**
      * 3-way string quicksort a[low..high].
-     *  starting at dth character.
-     * The time complexity is O(2NlogN).
+     * starting at dth character.
+     * The time complexity is O(W*NlogN).
      *
      * @param arr String array.
      * @param low The lower.
@@ -81,10 +80,10 @@ class Quick3string {
      * The time complexity is O(N*N).
      *
      *
-     * @param      a     { String array }
-     * @param      low    The lower
-     * @param      high    The higher
-     * @param      d     { index }
+     * @param a String array.
+     * @param low The lower.
+     * @param high The higher.
+     * @param d index.
      */
     private void insertion(final String[] a,
         final int low, final int high, final int d) {
@@ -99,26 +98,26 @@ class Quick3string {
      * exchange a[i] and a[j].
      * The time complexity is O(1).
      *
-     *
-     * @param      a     { String array }
-     * @param      i     { index1 }
-     * @param      j     { index2 }
+     * @param arr String array.
+     * @param i index1.
+     * @param j index2.
      */
-    private void exch(final String[] a, final int i, final int j) {
-        String temp = a[i];
-        a[i] = a[j];
-        a[j] = temp;
+    private void exch(final String[] arr, final int i, final int j) {
+        String temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
     /**
-     * less function.
+     * less function is used to compare two strings
+     * and check if str1 is less than str2.
      * The time complexity is O(W).
      *
-     * @param      str1     { String a }
-     * @param      str2     { String b }
-     * @param      d     { index }
+     * @param str1 String str1.
+     * @param str2 String str2
+     * @param d index.
      *
-     * @return     { boolean }
+     * @return boolean true or flase.
      */
     private boolean less(final String str1,
         final String str2, final int d) {
