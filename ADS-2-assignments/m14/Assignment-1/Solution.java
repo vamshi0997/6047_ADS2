@@ -10,24 +10,26 @@ public final class Solution {
 
     }
     /**
+     * Time complexity O(N * W).
+     * where N is noofwords and W is length is word.
      * Main method is used to handle the input.
      *
-     * @param      args  The arguments
+     * @param args  The command line arguments.
      */
     public static void main(final String[] args) {
         String[] words = loadWords();
         //Your code goes here...
-        TST<Integer> t = new TST<Integer>();
+        TST<Integer> ternary = new TST<Integer>();
         int value = 0;
         for (String s: words) {
             for (int i = 0; i < s.length(); i++) {
-              t.put(s.substring(i), value);
+              ternary.put(s.substring(i), value);
               value++;
             }
         }
         Scanner scan = new Scanner(System.in);
         String prefix = scan.nextLine();
-        for (String k : t.keysWithPrefix(prefix)) {
+        for (String k : ternary.keysWithPrefix(prefix)) {
             System.out.println(k);
         }
     }
