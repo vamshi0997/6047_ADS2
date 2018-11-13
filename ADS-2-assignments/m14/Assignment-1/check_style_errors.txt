@@ -1,15 +1,11 @@
 Starting audit...
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:5:33: Parameter args should be final. [FinalParameters]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:26:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:6:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /Users/apple/6047_ADS2/ADS-2-assignments/m14/Assignment-1/Solution.java:21: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.
 Starting audit...

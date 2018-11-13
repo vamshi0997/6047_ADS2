@@ -1,8 +1,15 @@
 import java.util.Scanner;
 import java.util.Arrays;
-
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Main method is used to handle the input.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		String[] words = loadWords();
 		//System.out.println(Arrays.toString(words));
 		//Your code goes here...
@@ -16,13 +23,15 @@ public class Solution {
 		}
 		Scanner scan = new Scanner(System.in);
 		String prefix = scan.nextLine();
-
-		//System.out.println(prefix);
 		for (String k : t.keysWithPrefix(prefix)) {
 			System.out.println(k);
 		}
 	}
-
+    /**
+     * Loads words.
+     *
+     * @return the String array.
+     */
 	public static String[] loadWords() {
 		In in = new In("/Files/dictionary-algs4.txt");
 		String[] words = in.readAllStrings();
