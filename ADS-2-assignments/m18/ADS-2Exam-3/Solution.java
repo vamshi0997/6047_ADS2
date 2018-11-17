@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Solution {
 
@@ -109,6 +111,7 @@ public class Solution {
 class T9 {
 	TST<Integer> trie;
 	BinarySearchST<String, Integer> st1;
+	HashMap<Integer, ArrayList<String>> hmap;
 	Nwords nw;
 	MaxPQ<Nwords> m;
 
@@ -133,7 +136,84 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		return null;
+        hmap = new HashMap<Integer, ArrayList<String>>();
+        ArrayList<String> arr;
+        for(int i = 2; i <= 9; i++) {
+        	arr = new ArrayList<String>();
+        	if (i == 2) {
+            arr.add("a");
+            arr.add("b");
+            arr.add("c");
+            }
+            if (i == 3) {
+                arr.add("d");
+                arr.add("e");
+                arr.add("f");
+            }
+            if(i == 4) {
+                arr.add("g");
+                arr.add("h");
+                arr.add("i");
+            }
+            if(i == 5) {
+                arr.add("j");
+                arr.add("k");
+                arr.add("l");
+            }
+            if(i == 6) {
+                arr.add("m");
+                arr.add("n");
+                arr.add("o");
+            }
+            if(i == 7) {
+                arr.add("p");
+                arr.add("q");
+                arr.add("r");
+                arr.add("s");
+            }
+            if(i == 8) {
+                arr.add("t");
+                arr.add("u");
+                arr.add("v");
+            }
+            if(i == 9) {
+                arr.add("w");
+                arr.add("x");
+                arr.add("y");
+                arr.add("z");
+            }
+            hmap.put(i, arr);
+        }
+            
+            String[] sign = t9Signature.split("");
+            ArrayList<String> nar = new ArrayList<String>();
+            //String[] nar = new String[sign.length * sign.length];
+            //System.out.println(hmap);
+            // for(String s: sign) {
+            // 	System.out.println(s);
+            // }
+            for(int i = 0; i < sign.length; i++) {
+            	ArrayList<String> ar1 = hmap.get(Integer.parseInt(sign[i]));
+
+            	for (String s: ar1) {
+            		if(nar.size() >= 0) {
+            			for(String s1: nar) {
+            				String chec = s1 + s;
+            				nar.add(chec);
+            			}
+            		} else {
+                        nar.add(s);
+            		}
+            	}
+            }
+            System.out.println(nar);
+            Queue<String> queue = new Queue<String>();
+            for(String s: nar) {
+                if(trie.contains(s)) {
+                    queue.enqueue(s);
+                }
+            }
+		return queue;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
