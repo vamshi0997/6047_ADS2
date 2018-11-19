@@ -111,7 +111,7 @@ public class Solution {
 class T9 {
 	TST<Integer> trie;
 	BinarySearchST<String, Integer> st1;
-	HashMap<Integer, ArrayList<String>> hmap;
+	HashMap<Character, String> hmap;
 	Nwords nw;
 	MaxPQ<Nwords> m;
 
@@ -135,93 +135,43 @@ class T9 {
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
-		// your code goes here
-        hmap = new HashMap<Integer, ArrayList<String>>();
-        ArrayList<String> arr;
-        for(int i = 2; i <= 9; i++) {
-        	arr = new ArrayList<String>();
-        	if (i == 2) {
-            arr.add("a");
-            arr.add("b");
-            arr.add("c");
-            }
-            if (i == 3) {
-                arr.add("d");
-                arr.add("e");
-                arr.add("f");
-            }
-            if(i == 4) {
-                arr.add("g");
-                arr.add("h");
-                arr.add("i");
-            }
-            if(i == 5) {
-                arr.add("j");
-                arr.add("k");
-                arr.add("l");
-            }
-            if(i == 6) {
-                arr.add("m");
-                arr.add("n");
-                arr.add("o");
-            }
-            if(i == 7) {
-                arr.add("p");
-                arr.add("q");
-                arr.add("r");
-                arr.add("s");
-            }
-            if(i == 8) {
-                arr.add("t");
-                arr.add("u");
-                arr.add("v");
-            }
-            if(i == 9) {
-                arr.add("w");
-                arr.add("x");
-                arr.add("y");
-                arr.add("z");
-            }
-            hmap.put(i, arr);
-        }
-            
-            String[] sign = t9Signature.split("");
-            ArrayList<String> nar = new ArrayList<String>();
-            //String[] nar = new String[sign.length * sign.length];
-            //System.out.println(hmap);
-            // for(String s: sign) {
-            // 	System.out.println(s);
-            // }
-            for(int i = 0; i < sign.length; i++) {
-            	ArrayList<String> ar1 = hmap.get(Integer.parseInt(sign[i]));
 
-            	for (String s: ar1) {
-            		if(nar.size() >= 0) {
-            			for(String s1: nar) {
-            				String chec = s1 + s;
-            				nar.add(chec);
-            			}
-            		} else {
-                        nar.add(s);
-            		}
-            	}
+		//your code goes here
+		hmap = new HashMap<Character, String>();
+		//Mapping the alphabets to numbers.
+	 	hmap.put('2', "abc");
+        hmap.put('3', "def");
+        hmap.put('4', "ghi");
+        hmap.put('5', "jkl");
+        hmap.put('6', "mno");
+        hmap.put('7', "pqrs");
+        hmap.put('8', "tuv");
+        hmap.put('9', "wxyz");
+		ArrayList<String> al1 = new ArrayList<String>();
+        ArrayList<String> al2 = new ArrayList<String>();
+        al1.add("");
+        for (int i = 0; i < t9Signature.length(); i++) {
+            for (String str : al1) {
+                String str1 = hmap.get(t9Signature.charAt(i));
+                for (int j = 0; j < str1.length(); j++)
+                    al2.add(str + str1.charAt(j));
             }
-            System.out.println(nar);
-            Queue<String> queue = new Queue<String>();
-            for(String s: nar) {
-                if(trie.contains(s)) {
-                    queue.enqueue(s);
-                }
+            al1 = al2;
+            al2 = new ArrayList<String>();
             }
-		return queue;
+        ArrayList<String> res = new ArrayList<String>();
+        for (int i = 0; i < al1.size(); i++) {
+        	if (trie.contains(al1.get(i))) {
+        		res.add(al1.get(i));
+        	}
+        }
+		return res;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		// for (String s: st1.keys()) {
-		// 	System.out.println(s + "-" + st1.get(s));
-		// }
+
 		m = new MaxPQ<Nwords>();
 		Queue<String> queue = new Queue<String>();
 		for (String str: words) {
