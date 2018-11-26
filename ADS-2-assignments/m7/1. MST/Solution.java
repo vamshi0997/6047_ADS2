@@ -10,7 +10,8 @@ public final class Solution {
 
     }
     /**
-     * The time complexity is O(N).
+     * The time complexity is O(E).
+     * where E is edges.
      * Main class is used to handle input and other classes.
      *
      * @param      args  The arguments
@@ -21,7 +22,6 @@ public final class Solution {
         int edge = scan.nextInt();
         EdgeWeightedGraph edgegraph = new EdgeWeightedGraph(vertex);
         Edge ed;
-        //KruskalMST;
         for (int i = 0; i < edge; i++) {
             int vert1 = scan.nextInt();
             int vert2 = scan.nextInt();
