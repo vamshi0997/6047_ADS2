@@ -12,7 +12,7 @@ public final class Solution {
     }
     /**
      * time complexity for main method is O(N * (E + V)).
-     * time complexity for dijkstras is O(E + V). 
+     * time complexity for dijkstras is O(E + V).
      * where N is number of queries.
      * E is edges and v is vetices.
      *
